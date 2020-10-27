@@ -7,52 +7,6 @@
 #include <string>
 #include <algorithm>
 
-double getPowerNum(double number, int times) {
-
-	double localnum = number;
-
-	for (int i = 1; i < times; i++) {
-		
-		localnum *= number;
-	}
-	return localnum;
-}
-
-
-
-//
-//	switch (i) {
-//	
-//	case i % first && i % second:
-//	
-//	
-//	}
-//
-
-void FizzBuzz(int first, int second, int amount) {
-
-	for (int i = 0; i < amount; i++) {
-		if (i % first == 0 && i % second == 0) {
-			std::cout << "FizzBuzz" << std::endl;
-
-		}
-
-		else if (i % second == 0) {
-			std::cout << "Buzz" << std::endl;
-		}
-
-		else if (i % first == 0) {
-			std::cout << "Fizz" << std::endl;
-		}
-
-		else {
-
-			std::cout << i << std::endl;
-		
-		}
-	}
-}
-
 
 std::string NameToHex(std::string name) {
 
